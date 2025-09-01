@@ -42,11 +42,11 @@ function getBaseURL() {
 // 接口 1：生成 DOCX
 app.post('/generate', async (req, res) => {
     try {
-        const { html } = req.body;
+        const { html,doc_name } = req.body;
         if (!html) return res.status(400).json({ error: 'html 字段不能为空' });
 
         // 文件名用时间戳
-        const filename = `doc_${Date.now()}.docx`;
+        const filename = doc_name ? `${doc_name}.docx` : `文件_${Date.now()}.docx`;
         const filepath = path.join(docsDir, filename);
 
         // 生成 DOCX
