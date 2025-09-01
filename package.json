@@ -1,0 +1,24 @@
+{
+  "name": "html2docx",
+  "version": "1.0.0",
+  "description": "html to word docx",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liuchangfitcloud/html2docx.git"
+  },
+  "author": "ShrChang.Liu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/liuchangfitcloud/html2docx/issues"
+  },
+  "homepage": "https://github.com/liuchangfitcloud/html2docx#readme",
+  "dependencies": {
+    "express": "^5.1.0",
+    "html-docx-js": "^0.3.1"
+  }
+}
